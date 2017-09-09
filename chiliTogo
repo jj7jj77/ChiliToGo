@@ -8,8 +8,9 @@ public class ChiliToGo {
     int numb_of_Meals = 1;
 
     Scanner imp = new Scanner (System.in);
-    System.out.print("How many meals do you need?");
-    int meals = imp.nextInt();
+    System.out.print("How many adult meals do you need?");
+    System.out.print("How many child meals do you need?");
+    int meals = imp.nextInt(); 
 
     int total_numb_of_Adult_Meals = (meals/numb_of_Meals);
     int total_numb_of_Child_Meals = (meals%numb_of_Meals);
