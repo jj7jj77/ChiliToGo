@@ -1,1 +1,18 @@
-
+package JavaClassHomework1;
+import java.util.Scanner;
+public class MinutesConversion 
+{
+    public static void main(String[] args)
+{
+    Scanner imp = new Scanner (System.in);
+    System.out.print("How many minutes do you want to convert to?");
+    int minutes = imp.nextInt();
+    
+    double hours = minutes/60;
+    double days = minutes/(60.0 * 24);
+   
+    System.out.println("You have converted " + minutes+ " minutes to "+ hours + " minutes");
+    System.out.println("You have converted " + minutes+ " minutes to " + days + " days");
+    
+}
+}
