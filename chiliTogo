@@ -6,7 +6,6 @@ public static void main(String[] args)
 {
     int AdultMealprice = 7;
     int ChildMealprice = 4;
-    int numb_of_Meals = 1;
             
     Scanner imp = new Scanner (System.in);
     System.out.print("How many adult meals do you need?");
