@@ -1,5 +1,4 @@
 package JavaClassHomework1;
-import java.util.Scanner;
 public class ChiliToGoProfit 
 {
     public static void main(String[] args)
