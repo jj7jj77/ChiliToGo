@@ -1,4 +1,5 @@
 package JavaClassHomework1;
+import java.util.Scanner;
 public class ChiliToGoProfit 
 {
     public static void main(String[] args)
@@ -7,16 +8,22 @@ public class ChiliToGoProfit
     int ChildrenMealprice = 4;
     double cost_to_produce_Adult_Meal = 4.35;
     double cost_to_produce_Children_Meal = 3.10;
-     
+    
+    Scanner imp = new Scanner (System.in);
+    System.out.print("How many adult meals do you need?");
+    int AdultMeals = imp.nextInt();
+    System.out.print("How many children meals do you need?");
+    int ChildrenMeals = imp.nextInt();
+    
     double profit_per_Adult_Meal = AdultMealprice - cost_to_produce_Adult_Meal;
     double profit_per_Children_Meal = ChildrenMealprice - cost_to_produce_Children_Meal;
-   
     
+    double total_Adult_Meal_profit = profit_per_Adult_Meal * AdultMeals;
+    double total_Children_Meal_profit = profit_per_Children_Meal * ChildrenMeals;
+    double total_profit = total_Adult_Meal_profit + total_Children_Meal_profit;
     
-   //double grand_total_profit = total_Adult_Meal_profit + total_Children_Meal_profit;
-    
-   System.out.println("The total profit for the Adult Meal is $" + total_Adult_Meal_profit);
-   System.out.println("The total profit for the Children Meal is $" + total_Children_Meal_profit);
-   System.out.println("The grand total profit is $" + grand_total_profit);
+    System.out.println("The total profit for the Adult Meals is $" + total_Adult_Meal_profit);
+    System.out.println("The total profit for the Children Meals is $" + total_Children_Meal_profit);
+    System.out.println("The grand total profit is $" + total_profit);
 }
 }
