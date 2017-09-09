@@ -19,18 +19,16 @@ public static void main(String[] args)
     double total_cost_of_Child_Meal = ChildMeals * ChildMealprice;
     double total_cost_for_All_Meals = (total_cost_of_Adult_Meal + total_cost_of_Child_Meal);
     
-    System.out.println("You ordered " + numb_of_Meals + " meals ");
     System.out.println("You ordered " + AdultMeals + " meals ");
     System.out.println("You ordered " + ChildMeals + " meals ");
     System.out.println("You ordered " + total_numb_of_All_Meals + " meals ");
-    
-     Output:
-     How many adult meals do you need? 3
+         
+}
+}
+
+OUTPUT:
+How many adult meals do you need? 3
 How many child meals do you need? 1
-You ordered 1 meal/s 
 You ordered 3 adult meal/s 
 You ordered 1 child meal/s 
 You ordered 4 meal/s 
-     
-}
-}
