@@ -14,7 +14,7 @@ public class ChiliToGoProfit
     double grand_total_profit = total_Adult_Meal_profit + total_Children_Meal_profit;
     
    System.out.println("The total profit for the Adult Meal is $" + total_Adult_Meal_profit);
-   System.out.println("The total profit for the Adult Meal is $" + total_Children_Meal_profit);
-   System.out.println("The total profit for the Adult Meal is $" + grand_total_profit);
+   System.out.println("The total profit for the Children Meal is $" + total_Children_Meal_profit);
+   System.out.println("The grand total profit is $" + grand_total_profit);
 }
 }
