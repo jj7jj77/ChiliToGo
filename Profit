@@ -27,3 +27,11 @@ public class ChiliToGoProfit
     System.out.println("The grand total profit is $" + total_profit);
 }
 }
+
+
+OUTPUT:
+How many adult meals do you need? 3
+How many children meals do you need? 1
+The total profit for the Adult Meals is $7.950000000000001
+The total profit for the Children Meals is $0.8999999999999999
+The grand total profit is $8.850000000000001
