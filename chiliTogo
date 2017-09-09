@@ -14,7 +14,7 @@ public static void main(String[] args)
     System.out.print("How many child meals do you need?");
     int ChildMeals = imp.nextInt();
                         
-    int total_numb_for_All_Meals = AdultMeals + ChildMeals;
+    int total_numb_of_All_Meals = AdultMeals + ChildMeals;
     
     double total_cost_of_Adult_Meal = AdultMeals * AdultMealprice;
     double total_cost_of_Child_Meal = ChildMeals * ChildMealprice;
@@ -29,8 +29,3 @@ public static void main(String[] args)
      
 }
 }
-how man adult meals 
-how many child meals
-output the total cost of child meals
-toc of adult meal
-and total cost of all meals
