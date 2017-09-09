@@ -5,12 +5,15 @@ public class ChiliToGoProfit
 {
     int AdultMealprice = 7;
     int ChildrenMealprice = 4;
-    double AdultMealprofit = 4.35;
-    double ChildrenMealprofit = 3.10;
+    double cost_to_produce_Adult_Meal = 4.35;
+    double cost_to_produce_Children_Meal = 3.10;
+     
+    double profit_per_Adult_Meal = AdultMealprice - cost_to_produce_Adult_Meal;
+    double profit_per_Children_Meal = ChildrenMealprice - cost_to_produce_Children_Meal;
+   
     
-    double total_Adult_Meal_profit = AdultMealprice * AdultMealprofit;
-    double total_Children_Meal_profit = ChildrenMealprice * ChildrenMealprofit;
-    double grand_total_profit = total_Adult_Meal_profit + total_Children_Meal_profit;
+    
+   //double grand_total_profit = total_Adult_Meal_profit + total_Children_Meal_profit;
     
    System.out.println("The total profit for the Adult Meal is $" + total_Adult_Meal_profit);
    System.out.println("The total profit for the Children Meal is $" + total_Children_Meal_profit);
