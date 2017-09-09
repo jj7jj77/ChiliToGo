@@ -22,10 +22,13 @@ public static void main(String[] args)
     System.out.println("You ordered " + AdultMeals + " adult meal/s ");
     System.out.println("You ordered " + ChildMeals + " child meal/s ");
     System.out.println("You ordered " + total_numb_of_All_Meals + " meal/s ");
-    System.out.println("Your total cost of Adult Meals is $ " + total_cost_of_Adult_Meal);
-         
+    System.out.println("Your total cost of Adult Meals is $" + total_cost_of_Adult_Meal);
+    System.out.println("Your total cost of Child Meals is $" + total_cost_of_Child_Meal);
+    System.out.println("Your total cost for All Meals is $" + total_cost_for_All_Meals);
 }
 }
+
+
 OUTPUT:
 How many adult meals do you need? 3
 How many child meals do you need? 1
@@ -33,3 +36,5 @@ You ordered 3 adult meal/s
 You ordered 1 child meal/s 
 You ordered 4 meal/s 
 Your total cost of Adult Meals is $21.0
+Your total cost of Child Meals is $4.0
+Your total cost for All Meals is $25.0
