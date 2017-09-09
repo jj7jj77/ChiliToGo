@@ -14,14 +14,20 @@ public static void main(String[] args)
     System.out.print("How many child meals do you need?");
     int ChildMeals = imp.nextInt();
                         
-    int total_numb_for_All_Meals = (AdultMeals + ChildMeals);
+    int total_numb_for_All_Meals = AdultMeals + ChildMeals;
     
-    double total_cost_of_Adult_Meal = total_numb_of_Adult_Meals * AdultMealprice;
-    double total_cost_of_Child_Meal = total_numb_of_Child_Meals * ChildMealprice;
+    double total_cost_of_Adult_Meal = AdultMeals * AdultMealprice;
+    double total_cost_of_Child_Meal = ChildMeals * ChildMealprice;
     double total_cost_for_All_Meals = (total_cost_of_Adult_Meal + total_cost_of_Child_Meal);
     
-    System.out.println("You ordered " + meals + " meals");
-}   
+    System.out.println("You ordered " + numb_of_Meals + " meals ");
+    System.out.println("You ordered " + AdultMeals + " meals ");
+    System.out.println("You ordered " + ChildMeals + " meals ");
+    System.out.println("You ordered " + total_numb_of_All_Meals + " meals ");
+    
+     
+     
+}
 }
 how man adult meals 
 how many child meals
