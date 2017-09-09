@@ -11,7 +11,7 @@ public class MinutesConversion
     double hours = minutes/60;
     double days = minutes/(60.0 * 24);
    
-    System.out.println("You have converted " + minutes+ " minutes to "+ hours + " minutes");
+    System.out.println("You have converted " + minutes+ " minutes to "+ hours + " hours");
     System.out.println("You have converted " + minutes+ " minutes to " + days + " days");
     
 }
