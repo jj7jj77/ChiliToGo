@@ -1,0 +1,20 @@
+package JavaClassHomework1;
+import java.util.Scanner;
+public class ChiliToGoProfit 
+{
+    public static void main(String[] args)
+{
+    int AdultMealprice = 7;
+    int ChildrenMealprice = 4;
+    double AdultMealprofit = 4.35;
+    double ChildrenMealprofit = 3.10;
+    
+    double total_Adult_Meal_profit = AdultMealprice * AdultMealprofit;
+    double total_Children_Meal_profit = ChildrenMealprice * ChildrenMealprofit;
+    double grand_total_profit = total_Adult_Meal_profit + total_Children_Meal_profit;
+    
+   System.out.println("The total profit for the Adult Meal is $" + total_Adult_Meal_profit);
+   System.out.println("The total profit for the Adult Meal is $" + total_Children_Meal_profit);
+   System.out.println("The total profit for the Adult Meal is $" + grand_total_profit);
+}
+}
