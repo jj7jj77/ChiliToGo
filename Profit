@@ -1,19 +1,41 @@
 package JavaClassHomework1;
+import java.util.Scanner;
 public class ChiliToGoProfit 
 {
     public static void main(String[] args)
 {
     int AdultMealprice = 7;
     int ChildrenMealprice = 4;
-    double AdultMealprofit = 4.35;
-    double ChildrenMealprofit = 3.10;
+    double cost_to_produce_adult_meal = 4.35;
+    double cost_to_produce_child_meal = 3.10;
     
-    double total_Adult_Meal_profit = AdultMealprice * AdultMealprofit;
-    double total_Children_Meal_profit = ChildrenMealprice * ChildrenMealprofit;
-    double grand_total_profit = total_Adult_Meal_profit + total_Children_Meal_profit;
+    double profit_per_adult_meal = AdultMealprice - cost_to_produce_adult_meal;
+    double profit_per_child_meal = ChildrenMealprice - cost_to_produce_child_meal;
     
-   System.out.println("The total profit for the Adult Meal is $" + total_Adult_Meal_profit);
-   System.out.println("The total profit for the Children Meal is $" + total_Children_Meal_profit);
-   System.out.println("The grand total profit is $" + grand_total_profit);
+    Scanner imp = new Scanner (System.in);
+    System.out.print("How many adult meals do you need?");
+    int AdultMeals = imp.nextInt();
+    System.out.print("How many child meals do you need?");
+    int ChildMeals = imp.nextInt();
+    int total_numb_of_All_Meals = AdultMeals + ChildMeals;
+    
+    double total_cost_of_Adult_Meal = AdultMeals * AdultMealprice;
+    double total_cost_of_Child_Meal = ChildMeals * ChildMealprice;
+    double total_cost_for_All_Meals = (total_cost_of_Adult_Meal + total_cost_of_Child_Meal);
+    
+    System.out.println("You ordered " + AdultMeals + " adult meal/s ");
+    System.out.println("You ordered " + ChildMeals + " child meal/s ");
+    System.out.println("You ordered " + total_numb_of_All_Meals + " meal/s ");
+    System.out.println("Your total cost of Adult Meals is $" + total_cost_of_Adult_Meal);
+    System.out.println("Your total cost of Child Meals is $" + total_cost_of_Child_Meal);
+    System.out.println("Your total cost for All Meals is $" + total_cost_for_All_Meals);
+    
+    double total_adult_meal_profit = profit_per_adult_meal * AdultMeals;
+    double total_children_meal_profit = profit_per_child_meal * ChildMeals;
+    double total_profit = total_adult_meal_profit + total_children_meal_profit;
+    
+    System.out.println("The total profit for the Adult Meals is $" + total_adult_meal_profit);
+    System.out.println("The total profit for the Children Meals is $" + total_children_meal_profit);
+    System.out.println("The grand total profit is $" + total_profit);
 }
 }
